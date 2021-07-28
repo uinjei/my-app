@@ -6,7 +6,7 @@ export default {
     render() {
       this.html`
         <div class="content">
-            <h3>My official Github pages.</h3>
+            <h3>My official Github page.</h3>
             <p>
               Lorem ipsum dolor
             </p>
