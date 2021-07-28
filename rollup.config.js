@@ -8,7 +8,7 @@ import simplevars from 'postcss-simple-vars';
 //import cssnano from 'cssnano';
 
 export default {
-  input: 'src/app.js',
+  input: 'src/client/app.js',
   plugins: [
     resolve({mainFields: ['module','main']}),
     postcss({

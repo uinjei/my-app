@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "ru-build": "rollup --config rollup.config.js",
-    "build": "npm run ru-build && babel src -d dist --copy-files",
+    "build": "npm run ru-build && babel src/server -d dist --copy-files",
     "start": "npm run build && node dist",
     "restart": "rimraf dist && npm run start",
-    "dev": "nodemon --exec npm run restart -e js,css,html",
+    "dev": "nodemon --exec npm run restart -e js,css,scss,sass,html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -38,6 +38,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.10.2",
     "bulma": "^0.9.3",
+    "bulmaswatch": "^0.8.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "heresy": "^1.0.4",
